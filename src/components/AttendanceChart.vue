@@ -9,13 +9,13 @@
           <div class="bars">
             <div class="bar present" 
                  :style="{ width: getBarWidth(event.attendanceData.present[index]) }"
-                 :title="`Present: ${event.attendanceData.present[index]}`"></div>
+                 :title="Present: ${event.attendanceData.present[index]}"></div>
             <div class="bar late" 
                  :style="{ width: getBarWidth(event.attendanceData.late[index]) }"
-                 :title="`Late: ${event.attendanceData.late[index]}`"></div>
+                 :title="Late: ${event.attendanceData.late[index]}"></div>
             <div class="bar absent" 
                  :style="{ width: getBarWidth(event.attendanceData.absent[index]) }"
-                 :title="`Absent: ${event.attendanceData.absent[index]}`"></div>
+                 :title="Absent: ${event.attendanceData.absent[index]}"></div>
           </div>
           <div class="total">
             {{ event.attendanceData.present[index] + event.attendanceData.late[index] }}
@@ -51,7 +51,7 @@
     methods: {
       getBarWidth(value) {
         const maxValue = Math.max(...this.event.attendanceData.present)
-        return `${(value / maxValue) * 100}%`
+        return ${(value / maxValue) * 100}%
       }
     }
   }

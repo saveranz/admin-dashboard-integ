@@ -1,10 +1,10 @@
 <template>
   <div class="app-container">
-    <!-- New Header Design -->
+   
     <header class="university-header">
       <div class="header-content">
         <div class="logo-space">
-          <!-- Space for logo (add your logo file here) -->
+         
           <img v-if="false" src="@/assets/university-logo.png" alt="University Logo" class="logo">
           <div v-else class="logo-placeholder"></div>
         </div>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style>
-/* Base Styles */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 }
 
-/* New Header Styles */
+
 .university-header {
   background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
   color: white;
@@ -119,7 +119,7 @@ body {
   width: 100%;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
